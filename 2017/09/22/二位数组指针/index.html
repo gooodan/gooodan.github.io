@@ -6,20 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://gooodan.github.io">
-  <title>自学Java笔记02 | Gooodan&#39;s blog</title>
+  <title>二位数组指针 | Gooodan&#39;s blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="写代码首先要有思路：1、定义一个类，因为Java程序都在定义类中，Java程序都是以类的形式存在的2、定义一个主函数。目的是为了让该类可以独立的运行3、输出语句。">
-<meta name="keywords" content="Java">
+  <meta name="description" content="一测试">
+<meta name="keywords" content="C语言">
 <meta property="og:type" content="article">
-<meta property="og:title" content="自学Java笔记02">
-<meta property="og:url" content="http://gooodan.github.io/2017/04/25/自学Java笔记02/index.html">
+<meta property="og:title" content="二位数组指针">
+<meta property="og:url" content="http://gooodan.github.io/2017/09/22/二位数组指针/index.html">
 <meta property="og:site_name" content="Gooodan&#39;s blog">
-<meta property="og:description" content="写代码首先要有思路：1、定义一个类，因为Java程序都在定义类中，Java程序都是以类的形式存在的2、定义一个主函数。目的是为了让该类可以独立的运行3、输出语句。">
+<meta property="og:description" content="一测试">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2017-04-26T03:41:08.000Z">
+<meta property="og:updated_time" content="2017-09-22T07:18:28.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="自学Java笔记02">
-<meta name="twitter:description" content="写代码首先要有思路：1、定义一个类，因为Java程序都在定义类中，Java程序都是以类的形式存在的2、定义一个主函数。目的是为了让该类可以独立的运行3、输出语句。">
+<meta name="twitter:title" content="二位数组指针">
+<meta name="twitter:description" content="一测试">
   
     <link rel="alternative" href="/atom.xml" title="Gooodan&#39;s blog" type="application/atom+xml">
   
@@ -163,39 +163,27 @@ var _hmt = _hmt || [];
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-自学Java笔记02" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-二位数组指针" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      自学Java笔记02
+      二位数组指针
     </h1>
   
 
         
-        <a href="/2017/04/25/自学Java笔记02/" class="archive-article-date">
-  	<time datetime="2017-04-24T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-04-25</time>
+        <a href="/2017/09/22/二位数组指针/" class="archive-article-date">
+  	<time datetime="2017-09-21T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-09-22</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>写代码首先要有思路：<br>1、定义一个类，因为Java程序都在定义类中，Java程序都是以类的形式存在的<br>2、定义一个主函数。目的是为了让该类可以独立的运行<br>3、输出语句。<br><a id="more"></a></p>
-<h2 id="进制转换问题"><a href="#进制转换问题" class="headerlink" title="进制转换问题"></a>进制转换问题</h2><p>对于二进制来说<br>0     1      0      1      0      1      1<br>64     32  16  8  4   2    1</p>
-<p>111 = 7<br>1111 = 15<br>对于二进制            010-101-110<br>八进制位                 2       5     6        0256<br>对于二进制            1010-1110<br>十六进制                 10        14           0xAE<br>结论：<br>八进制位，其实就是二进制中的3个二进制位一个八进制位。<br>十六进制位，其实就是二进制中的4个二进制位一个十六进制位。</p>
-<h2 id="变量相加（面试题）"><a href="#变量相加（面试题）" class="headerlink" title="变量相加（面试题）"></a>变量相加（面试题）</h2><p>对于以下代码</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">VarDemo</span></span></div><div class="line"><span class="class"></span>&#123;</div><div class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(Strin[] args)</span></span></div><div class="line"><span class="function">	</span>&#123;</div><div class="line">		<span class="keyword">byte</span> b = <span class="number">4</span>;</div><div class="line">		<span class="keyword">byte</span> b1 = <span class="number">3</span>;</div><div class="line">		<span class="keyword">byte</span> b2 = <span class="number">7</span>;</div><div class="line">		b = b1 + b2;</div><div class="line">		</div><div class="line">		System.out.println(b);</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<blockquote>
-<p>Q&amp;A<br>Q:为什么该代码会编译失败？<br>A:因为b1和b2是变量，而变量是不确定的，b = b1 + b2右边不确定是无法判断并赋值的，如果是b = 3 + 7是可以得出结果b = 10，因为右边是确定的整数    </p>
-</blockquote>
-<h2 id="算数运算符（面试题）"><a href="#算数运算符（面试题）" class="headerlink" title="算数运算符（面试题）"></a>算数运算符（面试题）</h2><p>对于以下代码</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">VarDemo</span></span></div><div class="line"><span class="class"></span>&#123;</div><div class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span></div><div class="line"><span class="function">	</span>&#123;</div><div class="line">		<span class="keyword">short</span> s = <span class="number">3</span>;</div><div class="line">		<span class="comment">//s += 4;	//在底层自动做了强制转换，相当于s = (short)(s + 4)</span></div><div class="line">		s = s + <span class="number">4</span>; <span class="comment">//报错：丢失精度，没有做强制转换</span></div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<blockquote>
-<p>Q&amp;A<br>Q:为什么s = s + 4编译失败，而s += 4却通过？<br>A:s = s + 4报错是因为在进行加法运算后，右边进行了自动类型的提升（提升为4字节），提升后的类型不能赋给低值类型，会出现损失精度，而s += 4可以运行是因为，在赋值过程中底层做了自动强制转换。</p>
-</blockquote>
+        <h2 id="一"><a href="#一" class="headerlink" title="一"></a>一</h2><p>测试</p>
 
       
 
@@ -240,7 +228,7 @@ var _hmt = _hmt || [];
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Java</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">C语言</a>
         		</li>
       		
 		</ul>
@@ -296,7 +284,7 @@ var _hmt = _hmt || [];
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="http://s.jiathis.com/qrcode.php?url=http://gooodan.github.io/2017/04/25/自学Java笔记02/" alt="微信分享二维码">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://gooodan.github.io/2017/09/22/二位数组指针/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -310,18 +298,9 @@ var _hmt = _hmt || [];
   
 <nav id="article-nav">
   
-    <a href="/2017/08/28/hexo_change/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          将hexo搭建的博客从Windows转移至MacBook
-        
-      </div>
-    </a>
   
-  
-    <a href="/2017/04/20/自学Java笔记01/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">自学Java笔记01</div>
+    <a href="/2017/08/28/hexo_change/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">将hexo搭建的博客从Windows转移至MacBook</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -335,7 +314,7 @@ var _hmt = _hmt || [];
   
   <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="自学Java笔记02" data-title="自学Java笔记02" data-url="http://gooodan.github.io/2017/04/25/自学Java笔记02/"></div>
+	<div class="ds-thread" data-thread-key="二位数组指针" data-title="二位数组指针" data-url="http://gooodan.github.io/2017/09/22/二位数组指针/"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">
