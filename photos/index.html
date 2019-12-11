@@ -125,17 +125,17 @@
 
 
 
-<meta name="description" content="记住也好   记不住也好 反正名头不重要">
+<meta name="description" content="Photos    图片正在加载中…     (function() {     var loadScript = function(path) {       var $script = document.createElement(&apos;script&apos;)       document.getElementsByTagName(&apos;body&apos;)[0].appendChild($sc">
 <meta property="og:type" content="website">
-<meta property="og:title" content="分类">
-<meta property="og:url" content="http://gooodan.github.io/categories/index.html">
+<meta property="og:title" content="相册">
+<meta property="og:url" content="http://gooodan.github.io/photos/index.html">
 <meta property="og:site_name" content="刀马的博客">
-<meta property="og:description" content="记住也好   记不住也好 反正名头不重要">
+<meta property="og:description" content="Photos    图片正在加载中…     (function() {     var loadScript = function(path) {       var $script = document.createElement(&apos;script&apos;)       document.getElementsByTagName(&apos;body&apos;)[0].appendChild($sc">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-12-11T03:08:48.298Z">
+<meta property="og:updated_time" content="2019-12-11T08:53:24.681Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="分类">
-<meta name="twitter:description" content="记住也好   记不住也好 反正名头不重要">
+<meta name="twitter:title" content="相册">
+<meta name="twitter:description" content="Photos    图片正在加载中…     (function() {     var loadScript = function(path) {       var $script = document.createElement(&apos;script&apos;)       document.getElementsByTagName(&apos;body&apos;)[0].appendChild($sc">
 
 
 
@@ -165,13 +165,13 @@
 
 
 
-  <link rel="canonical" href="http://gooodan.github.io/categories/"/>
+  <link rel="canonical" href="http://gooodan.github.io/photos/"/>
 
 
 
 
 
-  <title>分类 | 刀马的博客</title>
+  <title>相册 | 刀马的博客</title>
   
 
 
@@ -311,7 +311,7 @@
     <div class="post-block page">
       <header class="post-header">
 
-	<h1 class="post-title" itemprop="name headline">分类</h1>
+	<h1 class="post-title" itemprop="name headline">相册</h1>
 
 
 
@@ -323,14 +323,24 @@
       <div class="post-body">
         
         
-          <div class="category-all-page">
-            <div class="category-all-title">
-                目前共计 2 个分类
-            </div>
-            <div class="category-all">
-              <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Hexo/">Hexo</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Java基础/">Java基础</a><span class="category-list-count">1</span></li></ul>
-            </div>
-          </div>
+          <p><link rel="stylesheet" href="../lib/album/ins.css"></p>
+<p><link rel="stylesheet" href="../lib/album/photoswipe.css"> </p>
+<link rel="stylesheet" href="../lib/album/default-skin/default-skin.css"> 
+
+<div class="photos-btn-wrap"><br>    <a class="photos-btn active" href="javascript:void(0)" target="_blank" rel="external">Photos</a><br></div><br><div class="instagram itemscope"><br>    <a href="https://gooodan.github.io" target="_blank" class="open-ins">图片正在加载中…</a><br></div>
+
+<script>
+  (function() {
+    var loadScript = function(path) {
+      var $script = document.createElement('script')
+      document.getElementsByTagName('body')[0].appendChild($script)
+      $script.setAttribute('src', path)
+    }
+    setTimeout(function() {
+        loadScript('../lib/album/ins.js')
+    }, 0)
+  })()
+</script>
         
       </div>
       
@@ -455,6 +465,44 @@
       </div>
     </main>
 
+    
+      <!-- Root element of PhotoSwipe. Must have class pswp. -->
+      <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="pswp__bg"></div>
+        <div class="pswp__scroll-wrap">
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+            <div class="pswp__ui pswp__ui--hidden">
+                <div class="pswp__top-bar">
+                    <div class="pswp__counter"></div>
+                    <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                    <button class="pswp__button pswp__button--share" title="Share"></button>
+                    <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                    <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                          <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div> 
+                </div>
+                <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+                </button>
+                <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+                </button>
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+            </div>
+        </div>
+      </div>
     
 
     <footer id="footer" class="footer">
