@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://gooodan.github.io/photos/data.json</loc>
+    
+    <lastmod>2019-12-11T14:14:51.213Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://gooodan.github.io/photos/index.html</loc>
     
     <lastmod>2019-12-11T09:09:21.940Z</lastmod>
