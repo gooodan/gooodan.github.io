@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://gooodan.github.io/about/index.html</loc>
+    
+    <lastmod>2019-12-11T03:08:50.905Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://gooodan.github.io/categories/index.html</loc>
+    
+    <lastmod>2019-12-11T03:08:48.298Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://gooodan.github.io/2017/03/26/%E7%94%A8Hexo%E5%92%8CGithub%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</loc>
     
     <lastmod>2019-12-10T10:54:56.239Z</lastmod>
@@ -19,13 +33,6 @@
     <loc>http://gooodan.github.io/tags/index.html</loc>
     
     <lastmod>2019-12-10T08:17:51.054Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://gooodan.github.io/categories/index.html</loc>
-    
-    <lastmod>2019-12-10T07:08:46.654Z</lastmod>
     
   </url>
   
